@@ -1,0 +1,30 @@
+.centro {
+    padding-left: 500px;
+}
+.formulario {
+    font-size: 40px;
+    border: 2px;
+    border-style:groove;
+    padding: 40px;
+    display: inline-block;
+    border-radius: 20px;
+}.formulario textarea {
+    color: black;
+}
+.formulario input {
+    color: rgb(39, 40, 36);
+    width: 570px;
+    height: 30px;
+}
+.formulario button {
+    color: rgb(250, 184, 61);
+    width: 100px;
+    height: 30px;
+    background-color: rgb(43, 38, 38);
+    border-color: rgb(250, 184, 61);
+    border-radius: 20px;
+}
+.formulario button:hover {
+    background-color:  rgb(48, 40, 25);
+    cursor: pointer;
+}
