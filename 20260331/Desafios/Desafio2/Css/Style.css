@@ -13,7 +13,7 @@ body {
     background-color: #251137;
     text-align: center;
     display: flex;
-    justify-content: center; /* demos display flex no menu, ao inves de usar inline-block e alinhamos com justify content*/
+    justify-content: center; /* dei display flex no menu, ao inves de usar inline-block e alinhei com justify content*/
 }
 .menu a {
     color:white;
@@ -70,21 +70,21 @@ ul {
     padding-left: 20px;
 }
 table {
-    width: 100%;
-    border-collapse: collapse;
+    color: (218, 246, 245);
+    display: flex;
 }
 th, td {
-    border: 1px solid #ccc;
+    border: 1px solid  #ddd;
     padding: 10px;
     text-align: left;
 }
 th {
-    background-color: #ddd;
+    background-color:  #33174b;
 }
 
 .footer {
     display: block;
-    background-color: #222;
+    background-color: #33174b;
     color: white;
     text-align: center;
     padding: 20px;
@@ -129,4 +129,22 @@ th {
  display: flex;
  padding-left: 20px;
  flex-direction: column;
+ padding-bottom: 10px;
+}
+.tabela {
+ background-color: #33174b; 
+ color:#e0dddd;
+ display: flex;
+ border-radius: 10px; 
+ padding: 20px; 
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.divisao {
+    width: 40%;
+    display: flex;
+    align-content: start;
+    margin-right: 100px;
+    padding: 20px;    
+    flex-direction: column;
 }
