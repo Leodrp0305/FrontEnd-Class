@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.header {
+    background-color: #33174b;
+    color: rgb(218, 246, 245);
+    padding: 20px;
+    text-align: center;
+}
+.menu {
+    background-color: #251137;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* demos display flex no menu, ao inves de usar inline-block e alinhamos com justify content*/
+}
+.menu a {
+    color:white;
+    padding: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #666;
+}
+
+.menu a:hover {
+    background-color: #55267e;
+}
+
+.main {
+    padding: 20px;
+}
+
+.section{
+    display: block;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+.section_card {
+    display: flex;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    justify-content: space-between;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px #ae6de6;
+}
+.card {
+    color: #f4f4f4;
+    width: 30%;
+    box-shadow: #33174b;
+    background: #33174b;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    vertical-align: top;
+}
+.img {
+    display: flex;
+    justify-content: center;
+}
+.img img {
+    box-shadow: 4px 4px 4px #ae6de6;
+}
+ul {
+    padding-left: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #ddd;
+}
+
+.footer {
+    display: block;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.footer p {
+    margin: 5p 0;
+}
+.Doações {
+    background-color: #33174b;
+    color: #e0dddd;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.Doações h1, p {
+    align-self: flex-start;
+}
+.caixa {
+    width: 70%;
+    text-align: justify;
+}
+.carrosel {
+    gap: 30px;
+    align-self: self-start;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carrosel img:hover {
+    transform: translateY(-5px);
+}
+
+.secao {
+ margin-top: 10px;
+ background-color: #33174b; 
+ color:#e0dddd;
+ border-radius: 10px;   
+ display: flex;
+ padding-left: 20px;
+ flex-direction: column;
+}
