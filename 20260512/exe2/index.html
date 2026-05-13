@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basico II</title>
+</head>
+<body> 
+
+        <div id="exe1">
+        <h1>Calculadora:</h1>
+        <input id="num1" type="text" name="num1" placeholder="Digite um número:">
+        <br><br>
+        <input id="num2" type="text" name="num2" placeholder="Digite um número:">
+        <br><br>
+        <button onclick="soma()">Soma</button>
+        <button onclick="subtracao()">Subtração</button>
+        <button onclick="divisao()">Divisão</button>
+        <button onclick="multiplicacao()">Multiplicação</button>
+        <br>
+        <span>Resultado:</span><input type="text" name="result" id="resultado" readonly>
+        </div>
+            <br><br><br><br>
+        <div id="exe2">
+            <h1>Calculadora de media:</h1>
+            <input style="width: 500px; height: 100px; font-size: 30px; padding-left: 20px;"
+            type="text" name="valores" id="media" placeholder="0/0/0/0">
+            <br><br>
+            <button onclick="calculamedia()">Calcular Media</button>
+            <p id="resultadoMedia"></p>
+        </div>
+        <br><br>
+        <div id="exe3">
+            <h1>Verificar maior</h1>
+
+            <input type="number" name="num1" id="n1">
+            <input type="number" name="num2" id="n2">
+            <input type="number" name="num3" id="n3">
+
+            <button onclick="verifica()">Verifica</button>
+
+            <p id="maior">O maior número é: </p>
+        </div>
+    <script src="/js/Script.js"></script>
+    <script src="/js/Script2.js"></script>
+</body>
+</html>
