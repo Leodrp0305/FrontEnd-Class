@@ -8,6 +8,7 @@ Exe01paragrafo = document.getElementById("Exe01paragrafo");
 
 if(Exe01nome != "") {
     Exe01paragrafo.innerText = "Olá, "+Exe01nome + ". Seja Bem-vindo(a)!"
+    Exe01paragrafo.style.color ="";
 } else {
     Exe01paragrafo.innerText = "Digite seu nome!";
     Exe01paragrafo.style.color ="red";
@@ -131,3 +132,22 @@ function Exe08Desaparecer(){
 }
 
 //Exe09
+
+function Exe09Gerarlista(){
+    let div, li, txt, Txtitem;
+    txt = document.getElementById("Exe09CaixaDeTexto").value;
+    if (txt != "") {
+            txt = Number(txt);
+            div = document.getElementById("Exe09lista");
+        for (let i=0; i< txt; i++){
+                Txtitem = prompt("Digite o texto do "+(i+1)+"º item");
+                li = document.createElement("li");
+                li.innerText = Txtitem;
+                div.appendChild(li);
+        }   
+    }else {
+        alert("Digite o número de itens  que deseja inserir!");
+    }
+
+
+}
