@@ -1,0 +1,16 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divisao {
+    background-color: rgb(184, 153, 214);
+    width: 500px;
+    padding: 20px;
+    border: blueviolet 1px solid;
+    margin: 10px;
+}
+
+.flex {
+    display: flex;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS BASICO III - Lista de Exercicios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JS BASICO III - Lista de Exercicios</h1>
+    <main>
+    <div class="divisao">
+    <h2>Exercicio01</h2>
+    
+    <p>Crie um botão que mostre uma mensagem de saudação em um parágrafo pré-existente, com base no nome digitado na caixa de text logo acima do botão</p>
+        <input type="text" name="nome" id="Exe01name" placeholder="Digite seu nome">
+        <button id="botaoExe01">Enviar!</button>
+        <p id="Exe01paragrafo"></p>
+    </div>
+    <div class="divisao">
+    <h2>Exercicio02</hr2>
+        <p>Alterar o estilo de um texto ao clickar em um botão</p>
+
+        <p id="Exe02paragrafo">Os chapéis de paíah</p>
+        <button id="Exe02btn">Mudar estilo</button>
+    </div>
+
+    <div class="divisao">
+    <h2>Exercicio03</h2>
+        <p>Alterar a cor da página com botões</p>
+        <div class="flex">
+        <button class="Exe03btn" data-cor="blue">Azul</button>
+        <button class="Exe03btn" data-cor="red">Vermelho</button>
+        <button class="Exe03btn" data-cor="black">Preto</button>
+        <button class="Exe03btn" data-cor="">Original</button>
+        </div>
+    </div>
+
+    <div class="divisao">
+    <h2>Exercicio04</h2>
+        <p>Crie parágrafos com botões usando o createElement e appendChild</p>
+        <p>Remova os para grafos com botões usando o remove Child e lastElementChild</p>
+            <div class="flex">
+            <button id="Exe04Criar">Adicionar paragrafo</button> 
+            <button id="Exe04Remover">Remover paragrafo</button>
+            <button id="Exe04Limpar">Limpar paragrafo</button>
+        </div> 
+        <div id="Exe04paragrafos">
+
+        </div>
+    </div>
+
+    <div class="divisao">
+    <h2>Exercicio05</h2>
+    <p>Mostre e esconda uma imagem ao clickar em um determinado botão</p>
+    <img src="img/pikachu.jpeg" alt="" id="Exe05imagem" width="150px">
+    <div class="flex">
+        <button id="Exe05btn">Olha, uma imagem</button>
+    </div>
+
+    </div>
+
+    <div class="divisao">
+    <h2>Exercicio06</h2>
+    <p>Trocar imagem para uma imagem do assunto selecionado</p>
+    <p>Escolha seu assunto</p>
+    <select id=Exe06Select>
+        <option>Pikachu</option>
+        <option>Galinha</option>
+    </select>
+    <br><br>
+    <img src="" alt="" id="Exe06img" width="150px">
+    </div>
+
+    <div class="divisao">
+    <h2>Exercicio07</h2>
+        <p>Altere a cor de uma div quando o mouse passa </p>
+        <div id="Exe07Div" 
+        onmouseover="Exe07DivEnter()" 
+        onmouseout="Exe07DivLeave()"
+        style="background-color: blue;
+        height: 300px;
+        width: 300px;
+        "
+        > 
+
+        </div>
+    </div>
+
+    <div class="divisao">
+    <h2>Exercicio08</h2>
+    <p>Exiba uma mensagem quando o usuário passar o mouse em cima da imagem</p>
+    <p style="opacity: 0; transition: 2s;" id="Exe08Paragrafo">Olá mundo</p>
+    
+        <img src="/img/Buque_de_galinha.jpeg" alt=""
+        id="Exe08Img">
+    </div>
+
+    <div class="divisao">
+    <h2>Exercicio09</h2>
+    <p>Criar varios itens automaticamente - lista dinâmica</p>
+    <input type="text" id="Exe09CaixaDeTexto">
+    <br>
+    <button id="Exe09btn">Gerar lista</button> 
+        <ul id="Exe09lista">
+
+        </ul>
+    </div>
+
+    <div class="divisao">
+    <h2>Exercicio10</h2>
+        <p>Lista de compras</p>
+        <div class="flex">
+            <div >
+                <span>Kit Turbao Alibaba</span><br>
+                <img src="/img/Alibaba_Turbo.webp" width="150px" height="150px"><br>
+                <p>R$1200,00</p>
+                <button class="produtoAdd" data-descr="turbao" data-preco="1200">Adicionar</button>
+                <button class="produtoRmv" data-descr="turbao" data-preco="1200">Remover</button>
+            </div>
+            <div  style="margin: 0 10px;">
+                <span>Aerofolio (discreto)</span><br>
+                <img src="/img/aerofolioDiscreto.jpeg" width="150px" height="150px"><br>
+                <p>R$950,00</p>
+                <button class="produtoAdd" data-descr="aerofolio" data-preco="950">Adicionar</button>
+                <button class="produtoRmv" data-descr="aerofolio" data-preco="950">Remover</button>
+            </div>
+            <div >
+                <span>Kit Turbao Alibaba</span><br>
+                <img src="/img/Toretto.jpg" width="150px" height="150px"><br>
+                <p>R$5000,00</p>
+                <button class="produtoAdd" data-descr="toretto" data-preco="5000">Adicionar</button>
+                <button class="produtoRmv" data-descr="toretto" data-preco="5000">Remover</button>
+            </div>
+        </div>
+        <p>Itens no Carrinho</p>
+        <ol id="Exe10Lista">
+        </ol>
+        <p>Valor da compra</p>
+        <p id="Exe10Valor"></p>
+    </div>
+
+    <div class="divisao">
+    <h2>Exercicio11</h2>
+    </div>
+    </main>
+    <script src="js/script.js"/>
+</body>
+</html>
